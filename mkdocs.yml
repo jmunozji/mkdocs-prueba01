@@ -1,6 +1,8 @@
 site_name: Mkdocs Prueba01
 theme:
   name: material
+  logo: assets/logocaminas.png
+
   palette: 
     - media: "(prefers-color-scheme: light)"    
     # Palette toggle for light mode
@@ -8,7 +10,7 @@ theme:
       primary: blue
       accent: green 
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/weather-night
         name: Cambiar a modo oscuro
 
     # Palette toggle for dark mode
@@ -17,7 +19,7 @@ theme:
       primary: black
       accent: deep orange
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/weather-sunny
         name: Cambiar a modo claro
   language: es
   features:
