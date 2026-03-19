@@ -58,8 +58,8 @@ plugins:
       lang: es
 
 
-extra_css:
-  - stylesheets/extra.css
+#extra_css:
+#  - stylesheets/extra.css
 
 extra:
   analytics: 
