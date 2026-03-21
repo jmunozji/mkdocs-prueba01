@@ -2,7 +2,9 @@ site_name: Mkdocs Prueba01
 theme:
   name: material
   logo: assets/logocaminas.png
-
+  font: 
+    text: Merriweather Sans
+    code: Fira Code
   palette: 
     - media: "(prefers-color-scheme: light)"    
     # Palette toggle for light mode
@@ -37,7 +39,11 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.mark
   - admonition
   - pymdownx.inlinehilite
@@ -52,6 +58,11 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - footnotes
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg   
+     
+
   
 plugins: 
   - search:
